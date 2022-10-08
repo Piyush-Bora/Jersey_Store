@@ -4,7 +4,7 @@ import ProdCategories from './ProdCategories'
 function Home() {
     return (
         <div>
-            <h1 className="text-4xl font-semibold text-center m-5 text-white">Categories</h1>
+            <h1 className="text-4xl font-bold text-center m-5 text-white">Categories</h1>
             <ProdCategories />
         </div>
     )

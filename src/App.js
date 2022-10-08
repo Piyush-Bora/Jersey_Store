@@ -5,10 +5,11 @@ import Navbar from './components/Navbar'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import Form from './components/Form';
+import ProdDesc from './components/ProdDesc';
 
 function App() {
   
-  const [navOpen, setNav] = useState('false');
+  const [navOpen, setNav] = useState('true');
 
     const toggleNav = () => {
         if (navOpen === 'false') {
@@ -20,12 +21,13 @@ function App() {
     }
   return (
     <>
-    <Navbar mode={navOpen} toggleNavBar={toggleNav} />
     <BrowserRouter>
+    <Navbar mode={navOpen} toggleNavBar={toggleNav} />
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/form" element={<Form />} />
+      <Route path="/products" element={<ProdDesc />} />
       </Routes>
     </BrowserRouter>
     </>

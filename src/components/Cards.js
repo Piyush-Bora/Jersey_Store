@@ -13,14 +13,14 @@ function Cards(props) {
           />
         </div>
         <div className="text-part bg-white flex flex-col justify-between rounded-b-lg focus:outline-none">
-          <span className="p-2 font-nunito font-bold text-xl text-center">
-            A Card
+          <span className="p-2 font-bold text-xl text-center">
+            {props.title}
           </span>
-          <hr className={`bg-gray-700 mx-5 {${props.description}? : hidden}`} />
-          <p className={`p-5 font-nunito text-sm text-justify {${props.description}? : hidden}`}>
+          <hr className={`bg-gray-700 mx-5 ${props.description ? '' : 'hidden'}`} />
+          <p className={`p-5 text-sm text-justify ${props.description ? '' : 'hidden'}`}>
             {props.description}
           </p>
-          <a rel="noreferrer" href="/" target="_blank" className="m-3">
+          <a rel="noreferrer" href="/" className="m-3">
             <button className="bg-blue-900 text-white rounded-lg p-2 min-w-full">
               Learn More
             </button>

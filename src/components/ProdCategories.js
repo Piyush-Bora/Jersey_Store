@@ -6,9 +6,14 @@ function ProdCategories(props) {
   return (
     <div>
       <div className="card-contain flex flex-wrap  justify-center">
-        <Cards />
-        <Cards />
-        <Cards />
+        <Cards title="International Jerseys" />
+        <Cards title="Design Concepts" />
+        <Cards title="League Jerseys" />
+        <Cards title="League Jerseys" />
+        <Cards title="League Jerseys" />
+        <Cards title="League Jerseys" />
+        <Cards title="League Jerseys" />
+        <Cards title="League Jerseys" />
       </div>
     </div>
   )

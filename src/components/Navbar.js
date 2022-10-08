@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import PropTypes from "prop-types";
 
 export default function Navbar(props) {
   return (
     <div>
-      <header className="sticky z-50 top-0 w-full bg-slate-900/80 text-white h-16 flex items-center px-3 justify-between">
+      <header className="sticky w-full bg-slate-900 bg-opacity-80 z-50 top-0 backdrop-filter backdrop-blur text-white h-16 flex items-center px-3 justify-between ">
         {/* <!-- left elements div --> */}
         <div className="left-div logo">
           <img className="h-10" src="src/img/whatsapp.png" alt="" />
@@ -29,19 +30,19 @@ export default function Navbar(props) {
             </svg>
           </button>
           <ul
-            className={`fixed left-0 right-0 min-h-screen bg-cyan-800 space-y-2 p-5 mt-3 font-nunito font-medium text-lg z-50 transform translate-x-full ${props.mode === "false" ? "translate-x-0" : "translate-x-full"} duration-300 md:relative md:flex md:min-h-0 md:space-y-0 md:p-0 md:bg-opacity-0 md:opacity-100 md:mt-0 md:space-x-4 md:translate-x-0 md:mr-2`}
+            className={`fixed left-0 right-0 min-h-screen backdrop:filter backdrop:blur bg-slate-900/90 space-y-2 p-5 mt-3 font-nunito font-medium text-lg z-50 transform translate-x-full ${props.mode === "false" ? "translate-x-0" : "translate-x-full"} duration-300 md:relative md:flex md:min-h-0 md:space-y-0 md:p-0 md:bg-transparent md:mt-0 md:space-x-4 md:translate-x-0 md:mr-2 md:justify-center`}
           >
-            <li className="hover:bg-indigo-500 rounded-2xl px-3 py-2 text-center focus:outline-none focus:bg-indigo-500">
-              <a href="/home">Home</a>
+            <li className="border-b-2 border-transparent hover:border-white px-3 py-2 text-center focus:outline-none transform duration-300 md:focus:bg-indigo-500 rounded-xl">
+              <Link to="/home">Home</Link>
             </li>
-            <li className="hover:bg-indigo-500 rounded-2xl px-3 py-2 text-center focus:outline-none focus:bg-indigo-500">
-              <a href="/">About</a>
+            <li className="border-b-2 border-transparent hover:border-white px-3 py-2 text-center focus:outline-none transform duration-300 md:focus:bg-indigo-500 rounded-xl">
+              <Link to="/">About</Link>
             </li>
-            <li className="hover:bg-indigo-500 rounded-2xl px-3 py-2 text-center focus:outline-none focus:bg-indigo-500">
-              <a href="/">Products</a>
+            <li className="border-b-2 border-transparent hover:border-white px-3 py-2 text-center focus:outline-none transform duration-300 md:focus:bg-indigo-500 rounded-xl">
+              <Link to="/products">Products</Link>
             </li>
-            <li className="bg-indigo-500 rounded-2xl px-3 py-2 text-center focus:outline-none hover:bg-teal-600 duration-300">
-              <a href="/form">Login</a>
+            <li className="rounded-2xl px-3 py-2 text-center focus:outline-none transform hover:bg-teal-600 duration-300">
+              <Link to="/form">Login</Link>
             </li>
           </ul>
         </nav>
