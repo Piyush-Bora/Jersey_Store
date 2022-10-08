@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* // Default theme */
+@import '@splidejs/splide/css';
+/* // or other themes */
+@import '@splidejs/splide/css/skyblue';
+@import '@splidejs/splide/css/sea-green';
+/* // or only core styles */
+@import '@splidejs/splide/css/core';
+
+@font-face{
+  font-family: "Gilroy";
+  src: url('./fonts/gilroy.otf');
+}
+
+@layer base{
+  body{
+    @apply min-h-screen antialiased font-gilroy bg-slate-500
+  }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #094985;
+  border-radius: 10px
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1482b9;
+  border-radius: 10px
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+}
