@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
-    <div>
+    <div className="sticky top-0 z-50 h-16 w-full">
       <header className="sticky w-full bg-slate-900 bg-opacity-80 z-50 top-0 backdrop-filter backdrop-blur text-white h-16 flex items-center px-3 justify-between ">
         {/* <!-- left elements div --> */}
         <div className="left-div logo">
@@ -39,7 +39,7 @@ export default function Navbar(props) {
               <Link to="/">About</Link>
             </li>
             <li className="border-b-2 border-transparent hover:border-white px-3 py-2 text-center focus:outline-none transform duration-300 md:focus:bg-indigo-500 rounded-xl">
-              <Link to="/products">Products</Link>
+              <Link to="/allproducts">Products</Link>
             </li>
             <li className="rounded-2xl px-3 py-2 text-center focus:outline-none transform hover:bg-teal-600 duration-300">
               <Link to="/form">Login</Link>

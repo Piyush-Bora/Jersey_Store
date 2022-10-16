@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import Form from './components/Form';
 import ProdDesc from './components/ProdDesc';
+import AllProducts from './components/AllProducts';
 
 function App() {
   
@@ -27,7 +28,8 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/form" element={<Form />} />
-      <Route path="/products" element={<ProdDesc />} />
+      <Route path="/allproducts" element={<AllProducts />} />
+      <Route path="/proddesc" element={<ProdDesc />} />
       </Routes>
     </BrowserRouter>
     </>

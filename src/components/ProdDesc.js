@@ -1,7 +1,11 @@
 import React from "react";
-// import PropTypes from 'prop-types'
 
 function ProdDesc(props) {
+
+  // useEffect(() =>{
+  //   const element_id = props.eid
+  // }, [])
+
   return (
     <section className="text-gray-400 bg-gray-900 body-font overflow-hidden">
       <div className="container px-5 py-24 mx-auto">
