@@ -61,9 +61,9 @@ function Home() {
       </div>
       <div className="h-1 rounded-full mx-[40rem] bg-white"></div>
       <div className="card-contain flex flex-wrap justify-center mt-4">
-        <Cards title="International Jerseys" btnUrl="/allproducts" />
-        <Cards title="Design Concepts" btnUrl="/allproducts" />
-        <Cards title="League Jerseys" btnUrl="/allproducts" />
+        <Cards title="International Jerseys" link="/allproducts" />
+        <Cards title="Design Concepts" link="/allproducts" />
+        <Cards title="League Jerseys" link="/allproducts" />
       </div>
     </div>
   );
