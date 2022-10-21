@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom"
 
 function ProdDesc(props) {
 
@@ -6,8 +7,11 @@ function ProdDesc(props) {
   //   const element_id = props.eid
   // }, [])
 
+  let params = useParams();
+  console.log(params)
+
   return (
-    <section className="text-gray-400 bg-gray-900 body-font overflow-hidden">
+    <section className="text-gray-400 bg-gray-900 body-font overflow-hidden min-h-[calc(100vh-244px-64px)]">
       <div className="container px-5 py-24 mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
@@ -54,9 +58,9 @@ function ProdDesc(props) {
               <button className="rounded-full w-10 h-10 bg-gray-800 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
                 <svg
                   fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >

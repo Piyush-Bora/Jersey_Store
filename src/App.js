@@ -7,6 +7,8 @@ import Home from './components/Home';
 import Form from './components/Form';
 import ProdDesc from './components/ProdDesc';
 import AllProducts from './components/AllProducts';
+import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
   
@@ -30,7 +32,9 @@ function App() {
       <Route path="/form" element={<Form />} />
       <Route path="/allproducts" element={<AllProducts />} />
       <Route path="/proddesc" element={<ProdDesc />} />
+      <Route path="/about" element={<About />} />
       </Routes>
+    <Footer />
     </BrowserRouter>
     </>
   );

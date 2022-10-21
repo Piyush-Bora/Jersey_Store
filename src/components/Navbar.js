@@ -30,18 +30,18 @@ export default function Navbar(props) {
             </svg>
           </button>
           <ul
-            className={`fixed left-0 right-0 min-h-screen backdrop:filter backdrop:blur bg-slate-900/90 space-y-2 p-5 mt-3 font-nunito font-medium text-lg z-50 transform translate-x-full ${props.mode === "false" ? "translate-x-0" : "translate-x-full"} duration-300 md:relative md:flex md:min-h-0 md:space-y-0 md:p-0 md:bg-transparent md:mt-0 md:space-x-4 md:translate-x-0 md:mr-2 md:justify-center`}
+            className={`fixed left-0 right-0 min-h-screen backdrop:filter backdrop:blur bg-slate-900/90 space-y-2 p-5 mt-3 font-nunito font-medium text-lg z-50 transform translate-x-full ${props.mode === "false" ? "translate-x-0" : "translate-x-full"} duration-300 md:relative md:flex md:min-h-0 md:space-y-0 md:p-0 md:bg-transparent md:mt-0 md:space-x-4 md:translate-x-0 md:mr-2 md:justify-center md:items-center`}
           >
             <li className="border-b-2 border-transparent hover:border-white px-3 py-2 text-center focus:outline-none transform duration-300 md:focus:bg-indigo-500 rounded-xl">
               <Link to="/home">Home</Link>
             </li>
             <li className="border-b-2 border-transparent hover:border-white px-3 py-2 text-center focus:outline-none transform duration-300 md:focus:bg-indigo-500 rounded-xl">
-              <Link to="/">About</Link>
+              <Link to="/about">About</Link>
             </li>
             <li className="border-b-2 border-transparent hover:border-white px-3 py-2 text-center focus:outline-none transform duration-300 md:focus:bg-indigo-500 rounded-xl">
               <Link to="/allproducts">Products</Link>
             </li>
-            <li className="rounded-2xl px-3 py-2 text-center focus:outline-none transform hover:bg-teal-600 duration-300">
+            <li className="border-b-2 border-transparent rounded-2xl px-3 py-2 text-center focus:outline-none transform hover:bg-teal-600 duration-300">
               <Link to="/form">Login</Link>
             </li>
           </ul>

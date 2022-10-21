@@ -21,22 +21,32 @@
 
   /* width */
 ::-webkit-scrollbar { 
-  width: 10px;
+  width:8px;
+  position: absolute;
+}
+::-webkit-scrollbar:hover { 
+  width: 8px;
+  position: absolute;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #01172c;
+  background: #46525e;
+}
+::-webkit-scrollbar-track:hover {
+  visibility: visible;
+  background: #46525e;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #1c5f80;
-  border-radius: 10px
+  border-radius: 8px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #0c4866;
+  background: #445f6d;
+  border-radius: 8px;
 }
 }
