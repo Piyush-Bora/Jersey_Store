@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../images/logo_jersey.png"
 
 export default function Form(props) {
 
@@ -8,9 +9,9 @@ export default function Form(props) {
         <div className="contain w-[calc(100%-20px)] sm:w-[calc(100%-60px)] h-auto lg:w-1/3 bg-white rounded-xl">
           <form className="p-4 md:p-7 font-nunito">
             {/* <!-- header text --> */}
-            <div className="head text-2xl font-bold text-center">
+            <div className="head text-3xl font-bold text-center">
               <h3>Login Page</h3>
-              <div className="dash h-1 bg-blue-500 rounded-3xl max-w-full mx-8 mt-2"></div>
+              <div className="dash h-1 bg-[#5c92ae] rounded-3xl max-w-full mx-8 mt-2"></div>
             </div>
 
             {/* <!-- mobile number div --> */}
@@ -40,10 +41,10 @@ export default function Form(props) {
                 href="/"
                 onClick="chatlink();"
                 type="button"
-                className="flex space-x-2 justify-center items-center mt-3 bg-indigo-700 w-full rounded-lg py-2 px-4 focus:outline-none hover:bg-indigo-600 duration-200"
+                className="flex space-x-2 justify-center items-center mt-3 bg-[#5c92ae] w-full rounded-lg py-2 px-4 focus:outline-none hover:bg-[#3a6174] duration-200"
               >
-                <img alt="" src="src/whatsapp.png" className="h-6" />
-                <span className="text-white text-lg">Login</span>
+                <img alt="" src={logo} className="h-8" />
+                <span className="text-slate-900 text-xl font-semibold">Login</span>
               </a>
             </div>
           </form>

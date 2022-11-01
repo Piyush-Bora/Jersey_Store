@@ -16,7 +16,7 @@
 
 @layer base{
   body{
-    @apply min-h-screen antialiased font-gilroy bg-slate-500
+    @apply min-h-screen antialiased font-gilroy bg-[#162739] overflow-x-hidden
   }
 
   /* width */

@@ -12,26 +12,16 @@ import Footer from './components/Footer';
 
 function App() {
   
-  const [navOpen, setNav] = useState('true');
-
-    const toggleNav = () => {
-        if (navOpen === 'false') {
-            setNav('true');
-        }
-        else {
-            setNav('false');
-        }
-    }
   return (
     <>
     <BrowserRouter>
-    <Navbar mode={navOpen} toggleNavBar={toggleNav} />
+    <Navbar />
       <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/home" element={<Home />} />
+      {/* <Route path="/home" element={<Home />} /> */}
       <Route path="/form" element={<Form />} />
       <Route path="/allproducts" element={<AllProducts />} />
-      <Route path="/proddesc" element={<ProdDesc />} />
+      <Route path="/proddesc/:id" element={<ProdDesc />} />
       <Route path="/about" element={<About />} />
       </Routes>
     <Footer />

@@ -1,14 +1,14 @@
 import React from "react";
-import { useParams } from "react-router-dom"
+// import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import Categories from "./Categories";
 
 function ProdDesc(props) {
 
-  // useEffect(() =>{
-  //   const element_id = props.eid
-  // }, [])
+  const {id} = useParams();
+  console.log(id);
 
-  let params = useParams();
-  console.log(params)
+  const prod = Categories.find(obj => obj.id == id);
 
   return (
     <section className="text-gray-400 bg-gray-900 body-font overflow-hidden min-h-[calc(100vh-244px-64px)]">
@@ -16,10 +16,10 @@ function ProdDesc(props) {
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
             <h2 className="text-sm title-font text-gray-500 tracking-widest">
-              {props.category}
+              {prod.category}
             </h2>
             <h1 className="text-white text-3xl title-font font-medium mb-4">
-              {props.prodTitle}Animated Night Hill Illustrations
+              {prod.title}
             </h1>
             <div className="flex mb-4">
               <a
@@ -34,7 +34,7 @@ function ProdDesc(props) {
               sriracha taximy chia microdosing tilde DIY. XOXO fam iligo
               juiceramps cornhole raw denim forage brooklyn. Everyday carry +1
               seitan poutine tumeric. Gastropub blue bottle austin listicle
-              pour-over, neutra jean.{props.prodDesc}
+              pour-over, neutra jean.
             </p>
             <div className="flex border-t border-gray-800 py-2">
               <span className="text-gray-500">Color</span>
@@ -50,7 +50,7 @@ function ProdDesc(props) {
             </div>
             <div className="flex">
               <span className="title-font font-medium text-2xl text-white">
-                $58.00{props.price}
+                $58.00{prod.price}
               </span>
               <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
                 Button
@@ -72,7 +72,7 @@ function ProdDesc(props) {
           <img
             alt="ecommerce"
             className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded-lg shadow-xl"
-            src="https://thefootballcentral.co/wp-content/uploads/2022/07/Paris-Saint-Germain-Blue-202223-Home-front.jpg"
+            src={prod.image}
           />
         </div>
       </div>
